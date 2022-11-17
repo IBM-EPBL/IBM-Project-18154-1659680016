@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/imageprediction.css') }}">
+        <script src="{{ url_for('static', filename='js/imageprediction.js') }}" defer></script>
+        <title>Document</title>
+    </head>
+
+    <body>
+        <h1 class="header">
+            NUTRITION IMAGE ANALYSIS
+        </h1>
+
+        <div class="body-container">
+            <ul class="navbar-container navbar">
+                <li class="navbar__list">
+                    <a 
+                        href="{{ url_for('home')}}"
+                        class="list__item"
+                    >
+                        HOME
+                    </a>
+                </li>
+
+                <li class="navbar__list  list navbar__list--selected">
+                    <a 
+                        href="{{ url_for('image1')}}"
+                        class="list__item list__item--selected"
+                    >
+                        CLASSIFY
+                    </a>
+                </li>
+            </ul>
+
+            <form class="upload-container upload">
+                <label class="upload__label">
+                    UPLOAD IMAGE TO CLASSIFY
+                </label>
+
+                <div class="upload__btn">
+                    CHOOSE...
+                </div>
+
+                <input 
+                    id="imagefile"
+                    type="file"
+                    class="upload__input"
+                />
+
+                <img 
+                    class="upload__img"
+                >
+
+                <input 
+                    type="submit"
+                    class="submit__btn"
+                    value="CLASSIFY"
+                >
+            </form>
+
+            <div class="table-output"></div>
+            
+        </div>
+    </body>
+</html>

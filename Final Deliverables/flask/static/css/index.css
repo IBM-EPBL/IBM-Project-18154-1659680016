@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-image: url("../images/ibmbackground.svg");
+    background-size: cover;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.header {
+    padding: 32px 0 32px 8vw;
+    font-size: 2.5rem;
+    background: #EDC611;
+}
+
+.body-container {
+    display: flex;
+    padding-left: 8vw;
+}
+
+.navbar-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32vh;
+}
+
+.navbar__list {
+    font-size: 2rem;
+    padding: 16px 40px;
+    text-align: center;
+}
+
+.navbar__list--selected {
+    background: #6C7982;
+    border-radius: 16px;
+}
+
+.list__item--selected {
+    color: #EDC611;
+}
+
+.page-description {
+    margin-top: 22vh;
+    margin-left: 12vw;
+    width: 44vw;
+    font-size: 2rem;
+    padding: 50px 30px;
+    box-shadow: 0px 0px 20px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+}
+

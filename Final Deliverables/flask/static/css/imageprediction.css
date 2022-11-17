@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-image: url("../images/ibmbackground.svg");
+    background-size: cover;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.header {
+    padding: 32px 0 32px 8vw;
+    font-size: 2.5rem;
+    background: #EDC611;
+}
+
+.body-container {
+    display: flex;
+    padding-left: 8vw;
+}
+
+.navbar-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32vh;
+}
+
+.navbar__list {
+    font-size: 2rem;
+    padding: 16px 40px;
+    text-align: center;
+}
+
+.navbar__list--selected {
+    background: #6C7982;
+    border-radius: 16px;
+}
+
+.list__item--selected {
+    color: #EDC611;
+}
+
+.upload-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;  
+    justify-content: center;
+    margin-left: 10vw;
+    margin-top: 10vh;  
+}
+
+.upload__label {
+    font-size: 1.5rem;
+}
+
+.upload__input {
+    display: none;
+}
+
+.upload__btn {
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 10px 10px;
+    color: #FFF;
+    background: #1D203F;
+    border: none;
+    border-radius: 12px;    
+}
+
+.upload__btn:hover {
+    cursor: pointer;
+}
+
+.submit__btn {
+    visibility: hidden;
+    font-size: 1.5rem;
+    padding: 10px 10px;
+    background: none;
+    border: 1.5px solid #EDC611;
+    color: #EDC611;
+    border-radius: 12px;  
+}
+
+.submit__btn:hover {
+    cursor: pointer;
+}
+
+.upload__img {
+    width: 25vw;
+    height: 27vh;
+    display: inline-block;
+    padding: 10px 10px;
+    box-shadow: 0px 0px 20px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+}
+
+.table-container {
+    width: 25vw;
+    margin-left: 10vw;
+    margin-top: 10vh;
+    padding: 15px;
+    box-shadow: 0px 0px 20px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    background: #FFF;
+}
+
+.table__header {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.table__name {
+    color: #697A82;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.ingredient__label {
+    font-weight: 300;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+.ingredient__value {
+    color: #EDC611;
+}

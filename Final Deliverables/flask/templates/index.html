@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+        <title>Homepage</title>
+    </head>
+
+    <body>
+        <h1 class="header">
+            NUTRITION IMAGE ANALYSIS
+        </h1>
+
+        <div class="body-container">
+            <ul class="navbar-container navbar">
+                <li class="navbar__list list navbar__list--selected">
+                    <a 
+                        href="{{ url_for('home')}}"
+                        class="list__item list__item--selected"
+                    >
+                        HOME
+                    </a>
+                </li>
+
+                <li class="navbar__list">
+                    <a 
+                        href="{{ url_for('image1')}}"
+                        class="list__item"
+                    >
+                        CLASSIFY
+                    </a>
+                </li>
+            </ul>
+
+            <h2 class="page-description">
+                "Our food should be our medicine, and our medicine should be our food. "<br> - Hippocrates.
+            </h2>
+        </div>
+    </body>
+</html>
